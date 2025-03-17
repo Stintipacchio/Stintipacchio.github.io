@@ -311,5 +311,18 @@
       }
     });
   </script>
+  
+  <!-- Script to open PDFs in a new tab (simulating Ctrl+click) -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelectorAll('a[href$=".pdf"]').forEach(function(link) {
+        link.addEventListener('click', function(event) {
+          event.preventDefault();
+          window.open(link.href, '_blank');
+        });
+      });
+    });
+  </script>
+  
 </body>
 </html>
