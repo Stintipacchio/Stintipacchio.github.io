@@ -1,49 +1,46 @@
 <!doctype html>
 <html class="no-js" lang="en">
-<head>
 
+<head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  
+
   <title>Andrea Loretti</title>
   <meta name="description" content="Personal webpage for Andrea Loretti">
-  
+
   <!-- Social Media Preview -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Personal webpage for Andrea Loretti">
   <meta name="twitter:description" content="Personal webpage for Andrea Loretti">
   <meta property="og:title" content="Personal webpage for Andrea Loretti" />
   <meta property="og:description" content="Personal webpage for Andrea Loretti" />
-  
+
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,400i,600" rel="stylesheet">
-  
+
   <!-- Bootstrap + CSS -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link 
-    rel="stylesheet" 
-    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
-    integrity="sha384-JcD2Gh..." 
-    crossorigin="anonymous"
-  >
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcD2Gh..." crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
-  
+
   <!-- Font Awesome Icons -->
   <script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js"></script>
   <script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js"></script>
   <script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js"></script>
-  
+
   <!-- Additional CSS for dark/light mode and hover states -->
   <style>
-    /* General rules for dark mode */
     .dark-mode {
       background-color: #2c2c2c !important;
       color: #f1f1f1 !important;
     }
+
     .dark-mode a {
       color: #f1f1f1 !important;
       border-bottom-color: #f1f1f1 !important;
     }
+
     .dark-mode h1,
     .dark-mode h2,
     .dark-mode h3,
@@ -52,46 +49,49 @@
     .dark-mode h6 {
       color: #f1f1f1 !important;
     }
+
     .dark-mode p,
     .dark-mode li,
     .dark-mode span {
       color: #f1f1f1 !important;
     }
+
     .dark-mode .header,
     .dark-mode .footer {
       background-color: #333333 !important;
     }
-    /* Override styles for "grey" elements used in listings */
+
     .dark-mode .grey {
       background-color: #3a3a3a !important;
       color: #f1f1f1 !important;
     }
-    /* Force the orange color on links "CV" and "Contact" */
+
     .dark-mode .highlight_link {
       border-bottom-color: #c8622c !important;
     }
-    /* On hover, text and underline turn orange (both in light and dark mode) */
+
     .highlight_link:hover {
       color: #c8622c !important;
       border-bottom-color: #c8622c !important;
+    }
+
+    .highlight_link i {
+      margin-left: 5px;
     }
   </style>
 </head>
 
 <body class="loading ajax-loading dark-mode" data-site-url="#" data-page-url="/">
-  
+
   <!-- Header Section -->
   <header class="header">
     <div class="container-fluid">
       <div class="row">
-        <!-- Name / Title -->
         <a href="index.html" class="header__title col-xm-12 col-md-2 col-lg-5">
           <span>Andrea&nbsp;Loretti</span>
         </a>
-        <!-- Menu (optional) -->
         <ul class="menu__list col-xm-12 col-md-10 col-lg-5 d-flex justify-content-end align-items-center">
           <li>
-            <!-- Dark mode toggle button using Bootstrap -->
             <button id="darkModeToggle" class="btn btn-outline-light" type="button">
               <i class="fas fa-sun"></i>
             </button>
@@ -100,51 +100,71 @@
       </div>
     </div>
   </header>
-  
-  <!-- Loader elements (can be removed if unnecessary) -->
+
+  <!-- Loader elements (optional) -->
   <div class="loader">
     <svg width="120" height="30" viewBox="0 0 120 30">
       <circle cx="15" cy="15" r="15">
-        <animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" repeatCount="indefinite"/>
-        <animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" repeatCount="indefinite"/>
+        <animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" repeatCount="indefinite" />
+        <animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1"
+          repeatCount="indefinite" />
       </circle>
       <circle cx="60" cy="15" r="9" fill-opacity="0.3">
-        <animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" repeatCount="indefinite"/>
-        <animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5" repeatCount="indefinite"/>
+        <animate attributeName="r" from="9" to="9" begin="0s" dur="0.8s" values="9;15;9" repeatCount="indefinite" />
+        <animate attributeName="fill-opacity" from="0.5" to="0.5" begin="0s" dur="0.8s" values=".5;1;.5"
+          repeatCount="indefinite" />
       </circle>
       <circle cx="105" cy="15" r="15">
-        <animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" repeatCount="indefinite"/>
-        <animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1" repeatCount="indefinite"/>
+        <animate attributeName="r" from="15" to="15" begin="0s" dur="0.8s" values="15;9;15" repeatCount="indefinite" />
+        <animate attributeName="fill-opacity" from="1" to="1" begin="0s" dur="0.8s" values="1;.5;1"
+          repeatCount="indefinite" />
       </circle>
     </svg>
   </div>
+
   <div class="page-loader"></div>
-  
+
   <div class="page">
     <div class="page__content" data-page-title="Andrea Loretti">
-  
+
       <!-- Intro Section -->
       <section class="intro container-fluid">
         <div class="row">
           <div class="col-xl-3 offset-xl-2 col-lg-4 offset-lg-1 col-md-4 col-sm-12">
             <img src="images/io.jpeg" class="about_img" alt="Profile Photo">
           </div>
-  
+
           <div class="col-xl-5 col-lg-6 col-md-8 col-sm-12 about">
-            <br/>
+            <br />
             <p>
-              I am a researcher at the <a class="highlight_link" href="https://site.unibo.it/varlab/en" target="_blank">Virtual and Augmented Reality Lab (VARLab)</a> at the University of Bologna, working under the supervision of Prof. Gustavo Marfia and Prof. Pasquale Cascarano. My research focuses on mixed reality technologies for medical training, with a particular emphasis on developing immersive simulation systems for neurosurgical procedures. The goal is to enhance both realism and accessibility in surgical education.
+              I am a researcher at the <a class="highlight_link"
+                href="https://site.unibo.it/varlab/en" target="_blank" rel="noopener noreferrer">Virtual and Augmented
+                Reality Lab (VARLab)</a> at the University of Bologna, working under the supervision of Prof. Gustavo
+              Marfia and Prof. Pasquale Cascarano. My research focuses on mixed reality technologies for medical
+              training, with a particular emphasis on developing immersive simulation systems for neurosurgical
+              procedures. The goal is to enhance both realism and accessibility in surgical education.
             </p>
             <p>
-              I hold a Master’s degree in Computer Science from the University of Bologna and a double degree in Intelligent Interactive Systems from the University of Bielefeld. Previously, I earned my Bachelor’s degree in Computer Science at the University of Bologna, where I developed a software monitoring dashboard as part of my thesis project.
+              I hold a Master’s degree in Computer Science from the University of Bologna and a double degree in
+              Intelligent Interactive Systems from the University of Bielefeld. Previously, I earned my Bachelor’s
+              degree in Computer Science at the University of Bologna, where I developed a software monitoring dashboard
+              as part of my thesis project.
             </p>
             <p>
               In addition to my academic work, I have collaborated on interdisciplinary projects, including <em>DDRUM</em>, a medical data integration platform guided by Prof. Philipp Cimiano at the University of Bielefeld, and <em>Neuromix</em>, a virtual reality medical training system developed in collaboration with Bellaria Hospital. My professional experience also includes roles in system administration and digital transformation education.
             </p>
             <div class="link">
-              <h6><a class="highlight_link" href="files/CV_ENG.pdf" target="_blank">CV</a></h6>
+              <h6>
+                <a class="highlight_link" href="files/CV_ENG.pdf" download>
+                  CV <i class="fas fa-download"></i>
+                </a>
+              </h6>
               &nbsp;
-              <h6><a class="highlight_link" href="mailto:a.loretti@unibo.it" target="_blank">Contact</a></h6>
+              <h6>
+                <a class="highlight_link" href="mailto:a.loretti@unibo.it">
+                  Contact <i class="fas fa-envelope"></i>
+                </a>
+              </h6>
             </div>
           </div>
         </div>
@@ -153,13 +173,13 @@
       <!-- Research Publications Section -->
       <section class="listing container-fluid grey" id="research">
         <h1 class="divider">Publications</h1>
-      
+
         <!-- First paper -->
         <article class="listing-post2">
           <div class="row">
             <div class="col-xl-3 offset-xl-2 col-lg-4 offset-lg-1 col-md-4 col-sm-12">
-              <!-- Clickable image to download the PDF -->
-              <a class="listing-post__image" href="files/2023_CSEET.pdf" target="_blank" style="background-image: url(images/madsad.png);"></a>
+              <a class="listing-post__image" href="files/2023_CSEET.pdf" download
+                style="background-image: url(images/madsad.png);"></a>
             </div>
             <div class="listing-post__content col-xl-5 col-lg-6 col-md-8 col-sm-12">
               <h4>Training students to choose their agile practices and tools</h4>
@@ -169,23 +189,29 @@
               </div>
               <div class="link">
                 <h6>
-                  <a class="highlight_link" href="files/2023_CSEET.pdf" target="_blank">Download PDF</a>
+                  <a class="highlight_link" href="files/2023_CSEET.pdf" download>
+                    Download PDF <i class="fas fa-download"></i>
+                  </a>
                 </h6>
                 &nbsp;
                 <h6>
-                  <a class="highlight_link" href="https://conf.researchr.org/details/cseet-2023/research/37/Training-students-to-choose-their-agile-practices-and-tools" target="_blank">Website</a>
+                  <a class="highlight_link"
+                    href="https://conf.researchr.org/details/cseet-2023/research/37/Training-students-to-choose-their-agile-practices-and-tools"
+                    target="_blank" rel="noopener noreferrer">
+                    Website <i class="fas fa-external-link-alt"></i>
+                  </a>
                 </h6>
               </div>
             </div>
           </div>
         </article>
-      
+
         <!-- Second paper -->
         <article class="listing-post2">
           <div class="row">
             <div class="col-xl-3 offset-xl-2 col-lg-4 offset-lg-1 col-md-4 col-sm-12">
-              <!-- Clickable image to download the PDF -->
-              <a class="listing-post__image" href="files/DICOMandVirtualReality.pdf" target="_blank" style="background-image: url(images/DICOM3.png);"></a>
+              <a class="listing-post__image" href="files/DICOMandVirtualReality.pdf" download
+                style="background-image: url(images/DICOM3.png);"></a>
             </div>
             <div class="listing-post__content col-xl-5 col-lg-6 col-md-8 col-sm-12">
               <h4>Diegetic User Interfaces in Extended Reality for 3D Medical Visualization</h4>
@@ -195,23 +221,28 @@
               </div>
               <div class="link">
                 <h6>
-                  <a class="highlight_link" href="files/DICOMandVirtualReality.pdf" target="_blank">Download PDF</a>
+                  <a class="highlight_link" href="files/DICOMandVirtualReality.pdf" download>
+                    Download PDF <i class="fas fa-download"></i>
+                  </a>
                 </h6>
                 &nbsp;
                 <h6>
-                  <a class="highlight_link" href="https://ieeexplore.ieee.org/abstract/document/10896102" target="_blank">Website</a>
+                  <a class="highlight_link" href="https://ieeexplore.ieee.org/abstract/document/10896102" target="_blank"
+                    rel="noopener noreferrer">
+                    Website <i class="fas fa-external-link-alt"></i>
+                  </a>
                 </h6>
               </div>
             </div>
           </div>
         </article>
-      
+
         <!-- Third paper -->
         <article class="listing-post2">
           <div class="row">
             <div class="col-xl-3 offset-xl-2 col-lg-4 offset-lg-1 col-md-4 col-sm-12">
-              <!-- Clickable image to download the PDF -->
-              <a class="listing-post__image" href="files/2025-WACV-SOLLAMA.pdf" target="_blank" style="background-image: url(images/Fig3_2.jpg);"></a>
+              <a class="listing-post__image" href="files/2025-WACV-SOLLAMA.pdf" download
+                style="background-image: url(images/Fig3_2.jpg);"></a>
             </div>
             <div class="listing-post__content col-xl-5 col-lg-6 col-md-8 col-sm-12">
               <h4>Multi-Modal Large Language Model driven Augmented Reality Situated Visualization: the Case of Wine Recognition</h4>
@@ -221,29 +252,37 @@
               </div>
               <div class="link">
                 <h6>
-                  <a class="highlight_link" href="files/2025-WACV-SOLLAMA.pdf" target="_blank">Download PDF</a>
+                  <a class="highlight_link" href="files/2025-WACV-SOLLAMA.pdf" download>
+                    Download PDF <i class="fas fa-download"></i>
+                  </a>
                 </h6>
                 &nbsp;
                 <h6>
-                  <a class="highlight_link" href="https://openaccess.thecvf.com/content/WACV2025W/VISIONDOCS/html/Armandi_Multi-Modal_Large_Language_Model_driven_Augmented_Reality_Situated_Visualization_the_WACVW_2025_paper.html" target="_blank">Website</a>
+                  <a class="highlight_link"
+                    href="https://openaccess.thecvf.com/content/WACV2025W/VISIONDOCS/html/Armandi_Multi-Modal_Large_Language_Model_driven_Augmented_Reality_Situated_Visualization_the_WACVW_2025_paper.html"
+                    target="_blank" rel="noopener noreferrer">
+                    Website <i class="fas fa-external-link-alt"></i>
+                  </a>
                 </h6>
               </div>
             </div>
           </div>
         </article>
-      
+
       </section>
-  
+
       <!-- Footer -->
       <footer class="footer">
         <ul class="socials">
           <li class="socials__item">
-            <a href="https://github.com/Stintipacchio" class="socials__item__link" title="GitHub" target="_blank">
+            <a href="https://github.com/Stintipacchio" class="socials__item__link" title="GitHub" target="_blank"
+              rel="noopener noreferrer">
               <i class="fab fa-github" aria-hidden="true"></i>
             </a>
           </li>
           <li class="socials__item">
-            <a href="https://www.linkedin.com/in/andrea-l-309922158/" class="socials__item__link" title="LinkedIn" target="_blank">
+            <a href="https://www.linkedin.com/in/andrea-l-309922158/" class="socials__item__link" title="LinkedIn"
+              target="_blank" rel="noopener noreferrer">
               <i class="fab fa-linkedin" aria-hidden="true"></i>
             </a>
           </li>
@@ -252,35 +291,33 @@
           <span>© 2025 – Andrea&nbsp;Loretti</span>
         </div>
       </footer>
-  
-  <!-- JavaScript -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="js/simples-min.js"></script>
-  <script 
-    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" 
-    integrity="sha384-9/reFTGAW83EW2RDu2S0nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" 
-    crossorigin="anonymous"
-  ></script>
-  <script 
-    src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" 
-    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" 
-    crossorigin="anonymous"
-  ></script>
-  
-  <!-- Script to toggle dark mode -->
-  <script>
-    document.getElementById("darkModeToggle").addEventListener("click", function() {
-      document.body.classList.toggle("dark-mode");
-      if(document.body.classList.contains("dark-mode")){
-        this.classList.remove("btn-outline-dark");
-        this.classList.add("btn-outline-light");
-        this.innerHTML = '<i class="fas fa-sun"></i>';
-      } else {
-        this.classList.remove("btn-outline-light");
-        this.classList.add("btn-outline-dark");
-        this.innerHTML = '<i class="fas fa-moon"></i>';
-      }
-    });
-  </script>
+
+      <!-- JavaScript -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="js/simples-min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
+      <!-- Script to toggle dark mode -->
+      <script>
+        document.getElementById("darkModeToggle").addEventListener("click", function () {
+          document.body.classList.toggle("dark-mode");
+          if (document.body.classList.contains("dark-mode")) {
+            this.classList.remove("btn-outline-dark");
+            this.classList.add("btn-outline-light");
+            this.innerHTML = '<i class="fas fa-sun"></i>';
+          } else {
+            this.classList.remove("btn-outline-light");
+            this.classList.add("btn-outline-dark");
+            this.innerHTML = '<i class="fas fa-moon"></i>';
+          }
+        });
+      </script>
+
 </body>
+
 </html>
