@@ -142,7 +142,7 @@
               I hold a Master’s degree in Computer Science from the University of Bologna and a double degree in Intelligent Interactive Systems from the University of Bielefeld. Previously, I earned my Bachelor’s degree in Computer Science at the University of Bologna, where I developed a software monitoring dashboard as part of my thesis project.
             </p>
             <p>
-              In addition to my academic work, I have collaborated on interdisciplinary projects, including <em>DDRUM</em>, a medical data integration platform guided by Prof. Philipp Cimiano at the University of Bielefeld, and <em>Neuromix</em>, a virtual reality medical training system developed in collaboration with Bellaria Hospital. My professional experience also includes roles in system administration and digital transformation education.
+              In addition to my academic work, I have collaborated on interdisciplinary projects, including <em>DDRUM</em>, a medical data integration platform guided by Prof. Philipp Cimiano at the University of Bielefeld, and <em>Neuromix</em>, a virtual reality medical training system developed in collaboration with Bellaria Hospital. My professional experience also include roles in system administration and digital transformation education.
             </p>
             <div class="link">
               <h6>
@@ -314,13 +314,12 @@
   
   <!-- Script to open PDFs in a new tab (simulating Ctrl+click) -->
   <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      document.querySelectorAll('a[href$=".pdf"]').forEach(function(link) {
-        link.addEventListener('click', function(event) {
-          event.preventDefault();
-          window.open(link.href, '_blank');
-        });
-      });
+    document.addEventListener('click', function(e) {
+      const anchor = e.target.closest('a[href$=".pdf"]');
+      if (anchor) {
+        e.preventDefault();
+        window.open(anchor.href, '_blank');
+      }
     });
   </script>
   
