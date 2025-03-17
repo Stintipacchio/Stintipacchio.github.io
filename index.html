@@ -32,9 +32,8 @@
   <script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js"></script>
   <script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js"></script>
   
-  <!-- Additional CSS for dark/light mode and hover states -->
+  <!-- Dark Mode & Styling -->
   <style>
-    /* General rules for dark mode */
     .dark-mode {
       background-color: #2c2c2c !important;
       color: #f1f1f1 !important;
@@ -43,38 +42,27 @@
       color: #f1f1f1 !important;
       border-bottom-color: #f1f1f1 !important;
     }
-    .dark-mode h1,
-    .dark-mode h2,
-    .dark-mode h3,
-    .dark-mode h4,
-    .dark-mode h5,
-    .dark-mode h6 {
+    .dark-mode h1, .dark-mode h2, .dark-mode h3,
+    .dark-mode h4, .dark-mode h5, .dark-mode h6 {
       color: #f1f1f1 !important;
     }
-    .dark-mode p,
-    .dark-mode li,
-    .dark-mode span {
+    .dark-mode p, .dark-mode li, .dark-mode span {
       color: #f1f1f1 !important;
     }
-    .dark-mode .header,
-    .dark-mode .footer {
+    .dark-mode .header, .dark-mode .footer {
       background-color: #333333 !important;
     }
-    /* Override styles for "grey" elements used in listings */
     .dark-mode .grey {
       background-color: #3a3a3a !important;
       color: #f1f1f1 !important;
     }
-    /* Force the orange color on "CV" and "Contact" links */
     .dark-mode .highlight_link {
       border-bottom-color: #c8622c !important;
     }
-    /* On hover, text and underline turn orange (both in light and dark mode) */
     .highlight_link:hover {
       color: #c8622c !important;
       border-bottom-color: #c8622c !important;
     }
-    /* Optional: spacing for icons and text */
     .highlight_link i {
       margin-right: 0.3em;
     }
@@ -83,18 +71,15 @@
 
 <body class="loading ajax-loading dark-mode" data-site-url="#" data-page-url="/">
   
-  <!-- Header Section -->
+  <!-- Header -->
   <header class="header">
     <div class="container-fluid">
       <div class="row">
-        <!-- Name / Title -->
         <a href="index.html" class="header__title col-xm-12 col-md-2 col-lg-5">
           <span>Andrea&nbsp;Loretti</span>
         </a>
-        <!-- Menu (optional) -->
         <ul class="menu__list col-xm-12 col-md-10 col-lg-5 d-flex justify-content-end align-items-center">
           <li>
-            <!-- Dark mode toggle button using Bootstrap -->
             <button id="darkModeToggle" class="btn btn-outline-light" type="button">
               <i class="fas fa-sun"></i>
             </button>
@@ -103,8 +88,8 @@
       </div>
     </div>
   </header>
-  
-  <!-- Loader elements (can be removed if unnecessary) -->
+
+  <!-- Loader -->
   <div class="loader">
     <svg width="120" height="30" viewBox="0 0 120 30">
       <circle cx="15" cy="15" r="15">
@@ -121,28 +106,27 @@
       </circle>
     </svg>
   </div>
-  <div class="page-loader"></div>
-  
+
+  <!-- Main Content -->
   <div class="page">
     <div class="page__content" data-page-title="Andrea Loretti">
-  
+
       <!-- Intro Section -->
       <section class="intro container-fluid">
         <div class="row">
           <div class="col-xl-3 offset-xl-2 col-lg-4 offset-lg-1 col-md-4 col-sm-12">
             <img src="images/io.jpeg" class="about_img" alt="Profile Photo">
           </div>
-  
           <div class="col-xl-5 col-lg-6 col-md-8 col-sm-12 about">
             <br/>
             <p>
-              I am a researcher at the <a class="highlight_link" href="https://site.unibo.it/varlab/en" target="_blank" rel="noopener noreferrer"><i class="fas fa-vr-cardboard"></i> Virtual and Augmented Reality Lab (VARLab)</a> at the University of Bologna, working under the supervision of Prof. Gustavo Marfia and Prof. Pasquale Cascarano. My research focuses on mixed reality technologies for medical training, with a particular emphasis on developing immersive simulation systems for neurosurgical procedures. The goal is to enhance both realism and accessibility in surgical education.
+              I am a researcher at the <a class="highlight_link" href="https://site.unibo.it/varlab/en" target="_blank" rel="noopener noreferrer"><i class="fas fa-vr-cardboard"></i> Virtual and Augmented Reality Lab (VARLab)</a> at the University of Bologna, under the supervision of Prof. Gustavo Marfia and Prof. Pasquale Cascarano. My research focuses on mixed reality technologies for medical training, with a particular emphasis on developing immersive simulation systems for neurosurgical procedures. The goal is to enhance both realism and accessibility in surgical education.
             </p>
             <p>
               I hold a Master’s degree in Computer Science from the University of Bologna and a double degree in Intelligent Interactive Systems from the University of Bielefeld. Previously, I earned my Bachelor’s degree in Computer Science at the University of Bologna, where I developed a software monitoring dashboard as part of my thesis project.
             </p>
             <p>
-              In addition to my academic work, I have collaborated on interdisciplinary projects, including <em>DDRUM</em>, a medical data integration platform guided by Prof. Philipp Cimiano at the University of Bielefeld, and <em>Neuromix</em>, a virtual reality medical training system developed in collaboration with Bellaria Hospital. My professional experience also includes roles in system administration and digital transformation education.
+              In addition to my academic work, I have collaborated on interdisciplinary projects, including <em>DDRUM</em>, a medical data integration platform led by Prof. Philipp Cimiano at the University of Bielefeld, and <em>Neuromix</em>, a virtual reality medical training system developed in collaboration with Bellaria Hospital. My professional experience also includes roles in system administration and digital transformation education.
             </p>
             <div class="link">
               <h6>
@@ -160,13 +144,12 @@
           </div>
         </div>
       </section>
-  
-      <!-- Research Publications Section -->
+
+      <!-- Publications Section -->
       <section class="listing container-fluid grey" id="research">
         <h1 class="divider">Publications</h1>
-        
-        <!-- Publication Items (repeat as needed) -->
-        <!-- Example publication (repeat this block for each paper) -->
+
+        <!-- Publication 1 -->
         <article class="listing-post2">
           <div class="row">
             <div class="col-xl-3 offset-xl-2 col-lg-4 offset-lg-1 col-md-4 col-sm-12">
@@ -175,7 +158,7 @@
               </a>
             </div>
             <div class="listing-post__content col-xl-5 col-lg-6 col-md-8 col-sm-12">
-              <h4>Training students to choose their agile practices and tools</h4>
+              <h4>Training Students to Choose Their Agile Practices and Tools</h4>
               <p class="no_margin">Paolo Ciancarini, Andrea Loretti, Marcello Missiroli, Andrea Schinoppi</p>
               <div class="proceeding">
                 <p class="no_margin"><i>CSEET 2023 Paper</i></p>
@@ -197,10 +180,70 @@
           </div>
         </article>
 
-        <!-- Add more articles as needed -->
+        <!-- Publication 2 -->
+        <article class="listing-post2">
+          <div class="row">
+            <div class="col-xl-3 offset-xl-2 col-lg-4 offset-lg-1 col-md-4 col-sm-12">
+              <a class="listing-post__image" href="files/DICOMandVirtualReality.pdf" target="_blank" rel="noopener noreferrer" style="background-image: url(images/DICOM3.png);">
+                <i class="fas fa-file-pdf"></i>
+              </a>
+            </div>
+            <div class="listing-post__content col-xl-5 col-lg-6 col-md-8 col-sm-12">
+              <h4>Diegetic User Interfaces in Extended Reality for 3D Medical Visualization</h4>
+              <p class="no_margin">Pasquale Cascarano, Andrea Loretti, Alessio Di Pasquale, Shirin Hajahmadi, Giacomo Vallasciani, Luca Zanuttini, Matteo Martinoni, Gustavo Marfia</p>
+              <div class="proceeding">
+                <p class="no_margin"><i>XR Medical Imaging 2024 Paper</i></p>
+              </div>
+              <div class="link">
+                <h6>
+                  <a class="highlight_link" href="files/DICOMandVirtualReality.pdf" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-file-download"></i> Download PDF
+                  </a>
+                </h6>
+                &nbsp;
+                <h6>
+                  <a class="highlight_link" href="https://ieeexplore.ieee.org/abstract/document/10896102" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-external-link-alt"></i> Website
+                  </a>
+                </h6>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Publication 3 -->
+        <article class="listing-post2">
+          <div class="row">
+            <div class="col-xl-3 offset-xl-2 col-lg-4 offset-lg-1 col-md-4 col-sm-12">
+              <a class="listing-post__image" href="files/2025-WACV-SOLLAMA.pdf" target="_blank" rel="noopener noreferrer" style="background-image: url(images/Fig3_2.jpg);">
+                <i class="fas fa-file-pdf"></i>
+              </a>
+            </div>
+            <div class="listing-post__content col-xl-5 col-lg-6 col-md-8 col-sm-12">
+              <h4>Multi-Modal Large Language Model Driven Augmented Reality Situated Visualization: The Case of Wine Recognition</h4>
+              <p class="no_margin">Vincenzo Armandi, Andrea Loretti, Lorenzo Stacchio, Pasquale Cascarano, Gustavo Marfia</p>
+              <div class="proceeding">
+                <p class="no_margin"><i>WACV 2025 Paper</i></p>
+              </div>
+              <div class="link">
+                <h6>
+                  <a class="highlight_link" href="files/2025-WACV-SOLLAMA.pdf" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-file-download"></i> Download PDF
+                  </a>
+                </h6>
+                &nbsp;
+                <h6>
+                  <a class="highlight_link" href="https://openaccess.thecvf.com/content/WACV2025W/VISIONDOCS/html/Armandi_Multi-Modal_Large_Language_Model_driven_Augmented_Reality_Situated_Visualization_the_WACVW_2025_paper.html" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-external-link-alt"></i> Website
+                  </a>
+                </h6>
+              </div>
+            </div>
+          </div>
+        </article>
 
       </section>
-  
+
       <!-- Footer -->
       <footer class="footer">
         <ul class="socials">
@@ -219,22 +262,17 @@
           <span>© 2025 – Andrea&nbsp;Loretti</span>
         </div>
       </footer>
-  
+
+    </div>
+  </div>
+
   <!-- JavaScript -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="js/simples-min.js"></script>
-  <script 
-    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" 
-    integrity="sha384-9/reFTGAW83EW2RDu2S0nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" 
-    crossorigin="anonymous"
-  ></script>
-  <script 
-    src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" 
-    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" 
-    crossorigin="anonymous"
-  ></script>
-  
-  <!-- Dark Mode Toggle Script -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+  <!-- Dark Mode Toggle -->
   <script>
     document.getElementById("darkModeToggle").addEventListener("click", function() {
       document.body.classList.toggle("dark-mode");
@@ -250,19 +288,18 @@
     });
   </script>
 
-  <!-- PDF Click Refresh Script -->
+  <!-- PDF Click - Page Reload -->
   <script>
     const pdfLinks = document.querySelectorAll('a[href$=".pdf"]');
 
     pdfLinks.forEach(link => {
       link.addEventListener('click', function(event) {
-        // Reload the page after 1 second delay (1000ms)
         setTimeout(() => {
           location.reload();
-        }, 1000);
+        }, 500);
       });
     });
   </script>
-    
+
 </body>
 </html>
