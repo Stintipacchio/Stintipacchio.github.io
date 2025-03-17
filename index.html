@@ -296,7 +296,7 @@
     crossorigin="anonymous"
   ></script>
   
-  <!-- Script to toggle dark mode -->
+  <!-- Script per togglare la dark mode -->
   <script>
     document.getElementById("darkModeToggle").addEventListener("click", function() {
       document.body.classList.toggle("dark-mode");
@@ -312,13 +312,14 @@
     });
   </script>
   
-  <!-- Script to open PDFs in a new tab (simulating Ctrl+click) -->
+  <!-- Script per intercettare il click sui PDF con event delegation -->
   <script>
     document.addEventListener('click', function(e) {
-      const anchor = e.target.closest('a[href$=".pdf"]');
-      if (anchor) {
+      var link = e.target.closest('a[href$=".pdf"]');
+      if (link) {
         e.preventDefault();
-        window.open(anchor.href, '_blank');
+        e.stopPropagation();
+        window.open(link.href, '_blank');
       }
     });
   </script>
